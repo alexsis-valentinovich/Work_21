@@ -20,6 +20,7 @@ namespace Part_1
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Необработанное поле");
             Random rnd = new Random();
             for (int i = 0; i < n; i++)
             {
@@ -28,7 +29,6 @@ namespace Part_1
                     poleG[i, j] = rnd.Next(0, 100);
                 }
             }
-            Console.WriteLine("Необработанное поле");
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)
